@@ -4,7 +4,7 @@ defmodule SetLocale.Mixfile do
   def project do
     [
       app: :set_locale,
-      version: "0.2.6",
+      version: "0.2.7",
       description:
         "A Phoenix Plug to help with supporting I18n routes (http://www.example.org/de-at/foo/bar/az). Will also set Gettext to the requested locale used in the url when supported by your Gettext.",
       package: package(),
@@ -35,8 +35,8 @@ defmodule SetLocale.Mixfile do
 
   defp deps do
     [
-      {:phoenix, "~>1.3.0 or ~>1.4.0"},
-      {:gettext, "~>0.14"},
+      {:phoenix, "~>1.5.1"},
+      {:gettext, "~>0.18"},
       {:earmark, "~>1.3.1", only: :dev},
       {:ex_doc, ">0.13.1", only: :dev},
       {:excoveralls, "~> 0.10.5", only: :test}
